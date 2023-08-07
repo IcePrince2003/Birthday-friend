@@ -1,0 +1,112 @@
+#button
+{
+    height: 130px;
+    width: 250px;
+    background-color: red;
+    padding: 0px;
+    z-index: 1;
+}
+.message
+{
+    height: 800px;
+}
+#letter
+{
+    height: 0px;
+    width: 750px;
+    background-color: orange;
+    position: relative;
+    left: 330px;
+    bottom: 450px;
+    z-index: 1;
+    box-shadow: 10px 10px 30px;
+}
+#message
+{
+    font-size: 30px;
+    font-family: Lobster;
+    color: white;
+    text-align: justify;
+    margin: 0px;
+    padding:
+    20px;
+    margin-left:
+    20px;
+    opacity: 0;
+}
+#cover
+{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#gift
+{
+    height: 200px;
+    width: 0%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+#wish{
+    display: flex;
+    flex-direction: row;
+}
+.wish
+{
+    height:270px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    box-shadow: 10px 10px 20px;
+}
+.wish-mess
+{
+    font-size: 30px; 
+    font-family: Lobster; 
+    color: white; 
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+}
+#wish1
+{
+    transform: scale(0);
+}
+#wish2
+{
+    transform: scale(0);
+    margin: 0px 15px 0px 80px;
+}
+#wish3
+{
+    transform: scale(0);
+    position: relative; right: 00px;
+}
+#button:hover
+{
+    cursor: pointer;
+    background-color: darkred;
+}
+#email-icon:hover
+{
+    cursor: pointer;
+}
+#gift1:hover
+{
+    cursor: pointer;
+}
+#gift2:hover
+{
+    cursor: pointer;
+}
+#gift3:hover
+{
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chúc mừng sinh nhật</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <script src="main.js">
+                function click_gift1()
+                {
+                    document.getElementById('wish1').style.transform = 'scale(1)';
+                    document.getElementById('wish1').style.transition = 'transform 2s';
+                }
+            </script>
+    </head>
+    <body style="height: 600px;" onbeforeunload="myFunction()">
+        <div class="message" 
+        onclick="open_letter()">
+            <img src="email-icon.png" alt="" id="email-icon" style="height: 500px; width: 500px; object-fit:fill; margin: 0px;
+            position: relative; left: 450px; top: 100px; transform: scale(0); z-index: 1;">
+            <div id="letter">
+                <p id="message" >Hello. Chúc mừng sinh nhật ông bạn.<br>
+                Chọn quà ở dưới để nhận lời chúc nha.</p>
+                <div id="gift">
+                    <div>
+                        <img src="red-gift.png" alt="" id="gift1" style="width: 230px; transform: scale(0); object-fit: cover;" onclick="click_gift1()">
+                    </div>
+                    
+                    <img src="green-gift.png" alt="" id="gift2"
+                    style="width: 360px; transform: scale(0); object-fit: cover; margin: 0px 40px 0px 60px;"
+                    onclick="click_gift2()">
+                    <img src="pink-gift.png" alt="" id="gift3" style="width: 230px; transform: scale(0); object-fit: cover;"
+                    onclick="click_gift3()">
+                </div>
+                <div id="wish">
+                    <div id="wish1" class="wish" style="margin-left: 10px;">
+                        <p class="wish-mess" id="wish-mess1">Chúc bạn tuổi mới học không trượt môn nào</p>
+                    </div>
+                    <div id="wish2" class="wish">
+                        <p class="wish-mess" id="wish-mess2">Chúc bạn tuổi mới có học bổng, GPA đạt loại xuất sắc</p>
+                    </div>
+                    <div id="wish3" class="wish">
+                        <p class="wish-mess" id="wish-mess3" style="margin-left: 25px; margin-right: 25px;">Chúc bạn tuổi mới làm cái qq gì cũng thành công</p>
+                    </div>
+                </div>
+                <div id="cover"></div>
+            </div>
+        </div>
+        <button id="button" style="position: relative; left: 600px; bottom: 600px; line-height: 30px;"
+        onclick="click_button()">
+        <p style="font-family: Lobster; font-size: 20px; color: white; text-align: justify; margin: 0px 10px 0px;">Hello. Hôm nay là một ngày đặc biệt nên tôi cũng có tin nhắn đặc biệt cho bạn. Nhấn vào đây đi</p></button>
+         
+    </body>
+</html>
